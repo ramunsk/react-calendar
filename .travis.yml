@@ -1,0 +1,12 @@
+dist: bionic
+language: node_js
+node_js:
+    - node # latest stable node version
+cache: npm
+
+install:
+    - npm ci
+
+script:
+    - npm run build
+    - npm run test
