@@ -1,7 +1,17 @@
 import React from 'react';
-import './App.css';
+import Footer from '../Footer/Fotter';
 import Header from '../Header/Header';
+import MonthView from '../MonthView/MonthView';
+import './App.css';
 
-export default () => {
-    return <Header />;
+const App = () => {
+    return (
+        <>
+            <Header />
+            <MonthView />
+            <Footer />
+        </>
+    );
 };
+
+export default App;
