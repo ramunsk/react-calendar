@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import MonthView from './MonthView';
 
-describe('<App />', () => {
+describe('<MonthView />', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<App />, div);
+        ReactDOM.render(<MonthView />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
 });
