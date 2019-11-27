@@ -1,0 +1,10 @@
+.weeklane {
+    border-bottom: 1px solid #d7d7d7;
+    display: grid;
+    grid-template-columns: auto repeat(7, 1fr);
+}
+
+.weeklane__header {
+    background: #dadada;
+    padding: 0.5rem;
+}
