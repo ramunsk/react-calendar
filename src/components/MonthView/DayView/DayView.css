@@ -1,0 +1,12 @@
+.day {
+    display: grid;
+    padding: 0.5rem;
+}
+
+.day + .day {
+    border-left: 1px solid #d7d7d7;
+}
+
+.day .day__header {
+    text-align: center;
+}
