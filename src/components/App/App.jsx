@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../Footer/Fotter';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import MonthView from '../MonthView/MonthView';
 import './App.css';
