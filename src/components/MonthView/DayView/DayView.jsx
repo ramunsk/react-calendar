@@ -1,10 +1,10 @@
 import React from 'react';
 import './DayView.css';
 
-const DayView = () => {
+const DayView = ({ date }) => {
     return (
         <div className="day">
-            <div className="day__header">Day</div>
+            <div className="day__header">{date.getDate()}</div>
         </div>
     );
 };
