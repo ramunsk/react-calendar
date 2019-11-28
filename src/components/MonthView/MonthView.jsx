@@ -1,19 +1,17 @@
-import { getWeek, getWeeksInMonth, startOfMonth } from 'date-fns';
+import { eachDayOfInterval, endOfMonth, endOfWeek, startOfMonth, startOfWeek } from 'date-fns';
 import React from 'react';
+import DayView from './DayView/DayView';
 import './MonthView.css';
-import WeekLane from './WeekLane/WeekLane';
 
-const MonthView = () => {
-    const now = new Date();
-    const numberOfWeeks = getWeeksInMonth(now);
-    const firstMonthDay = startOfMonth(now);
-    const firstMonthWeek = getWeek(firstMonthDay);
+const MonthView = ({ date }) => {
+    const now = date || new Date();
+    const viewStart = startOfWeek(startOfMonth(now), { weekStartsOn: 1 });
+    const viewEnd = endOfWeek(endOfMonth(now), { weekStartsOn: 1 });
+    const viewDates = eachDayOfInterval({ start: viewStart, end: viewEnd });
 
-    const weekLanes = Array.from({ length: numberOfWeeks }, (x, i) => i + firstMonthWeek).map((i) => (
-        <WeekLane key={i} weekNumber={i} />
-    ));
+    const dayViews = viewDates.map((d, i) => <DayView key={d.valueOf()} date={d} />);
 
-    return <div className="month-view">{weekLanes}</div>;
+    return <div className="month">{dayViews}</div>;
 };
 
 export default MonthView;
