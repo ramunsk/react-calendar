@@ -23,5 +23,19 @@
             ""
         ],
         "description": "import React"
+    },
+    "React component": {
+        "scope": "javascriptreact",
+        "prefix": "rc",
+        "body": [
+            "import React from 'react';",
+            "",
+            "const $1 = () => {",
+            "    return <div></div>;",
+            "};",
+            "",
+            "export default $1;",
+        ],
+        "description": "React component snippet"
     }
 }

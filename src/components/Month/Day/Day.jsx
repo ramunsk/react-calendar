@@ -1,7 +1,7 @@
 import React from 'react';
-import './DayView.css';
+import './Day.css';
 
-const DayView = ({ date }) => {
+const Day = ({ date }) => {
     return (
         <div className="day">
             <div className="day__header">{date.getDate()}</div>
@@ -9,4 +9,4 @@ const DayView = ({ date }) => {
     );
 };
 
-export default DayView;
+export default Day;
