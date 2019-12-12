@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MonthView from './MonthView';
+import Day from './Day';
 
-describe('<MonthView />', () => {
+describe('<DayView />', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<MonthView />, div);
+        ReactDOM.render(<Day date={new Date()} />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
 });

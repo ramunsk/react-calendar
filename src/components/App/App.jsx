@@ -1,14 +1,14 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import MonthView from '../MonthView/MonthView';
+import Month from '../Month/Month';
 import './App.css';
 
 const App = () => {
     return (
         <>
             <Header />
-            <MonthView />
+            <Month />
             <Footer />
         </>
     );

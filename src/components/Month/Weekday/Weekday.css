@@ -1,0 +1,7 @@
+.weekday {
+    text-align: center;
+}
+
+.weekday+.weekday {
+    border-left: 1px solid var(--default-border-color);
+}
