@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MonthView from './MonthView';
+import Month from './Month';
 
 describe('<MonthView />', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<MonthView />, div);
+        ReactDOM.render(<Month />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
 });
